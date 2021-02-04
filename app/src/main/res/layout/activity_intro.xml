@@ -6,14 +6,22 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_1"
     tools:context=".IntroActivity">
-
+    <!--
+        android:background="@drwable/파일이름만"
+        drwable 에 소스있는경우
+    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="34dp">
-
+        <!--
+            android:layout_marginTop="dp"
+            android:layout_marginLeft="dp"
+            android:layout_marginRight="dp"
+            android:layout_marginBottom="dp"
+        -->
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="350dp"
@@ -21,7 +29,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             app:srcCompat="@drawable/star_" />
-
+        <!--
+            android:layout_gravity="center" 사진 정중앙 정렬용
+        -->
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="250dp"
@@ -29,7 +39,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             app:srcCompat="@drawable/main_2" />
-
+        <!--
+            android:background="@null" <- 화살표 배경제거
+            android:scaleType="fitXY"  <- 사진크기 자동조정
+        -->
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_marginLeft="300dp"
