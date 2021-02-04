@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -17,15 +19,14 @@ public class IntroActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         //타이틀바 삭제 종료
-        Handler handler = new Handler();
-        handler.postDelayed((new Runnable() {
+        ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
+            public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                finish();
             }
-        }),5000);
+        });
     }
     protected  void onPause(){
         super.onPause();
