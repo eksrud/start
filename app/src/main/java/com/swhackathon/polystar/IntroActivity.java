@@ -13,8 +13,10 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+        //타이틀바 삭제 시작
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        //타이틀바 삭제 종료
         Handler handler = new Handler();
         handler.postDelayed((new Runnable() {
             @Override
