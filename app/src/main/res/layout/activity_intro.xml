@@ -7,28 +7,39 @@
     android:background="@drawable/bg_1"
     tools:context=".IntroActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="350"
-        android:layout_height="300"
-        app:srcCompat="@drawable/star_"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="34dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="350"
-        android:layout_height="150"
-        app:srcCompat="@drawable/main_2"
-        tools:layout_editor_absoluteX="-25dp"
-        tools:layout_editor_absoluteY="360dp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/star_" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_"
-        android:backgroundTint="#FBF5F5"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="574dp" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/main_2" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_marginLeft="300dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/button_"
+            tools:srcCompat="@drawable/button_" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
