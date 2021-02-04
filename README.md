@@ -48,4 +48,5 @@
   |팀원|디자인|<a href = "https://aisw.dongseo.ac.kr/main/main.html"><img src="https://swhackathon.com/image/university_13.png"></a>|권민재|
 
 ## 어플리케이션 화면
-![first](./image/second.png)
+![first](./image/first.png)
+![second](./image/second.png)
