@@ -4,23 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/bg_2"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="300dp">
+
+    </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bg_2"
+        app:srcCompat="@drawable/ground"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ground"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="518dp" />
+        tools:layout_editor_absoluteY="506dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,44 +35,43 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5"/>
+            android:layout_weight="5" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="10"
-            android:background="@drawable/nav_3"
-             />
+            android:layout_weight="7"
+            android:background="@drawable/nav_4" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="30"/>
+            android:layout_weight="30" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:background="@drawable/nav_1"
-             />
+            android:background="@drawable/nav_1" />
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="30"/>
+            android:layout_weight="30" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:background="@drawable/nav_2"/>
+            android:background="@drawable/nav_2" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5"/>
+            android:layout_weight="5" />
     </LinearLayout>
 
 
